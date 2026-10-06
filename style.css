@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#site-header {
+  background-image: url("images/gallery-header.jpg");
+  background-size: cover;       
+  background-position: center;  
+  width: 100%;
+  min-height: 500px;
+  position: relative;           
+}
+
+
+#logo {
+  background-image: url("images/logo.png");
+  background-size: contain;     
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  position: absolute;  
+  top: 15px;
+  left: 15px;
+}
+
+
+#gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  padding: 20px;
+}
+
+#gallery-row a {
+  margin: 8px;
+  padding: 4px;
+}
+
+#gallery-row img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;   
+  display: block;
+}
+
+#gallery-row a:hover img {
+  opacity: 0.85;
+}
+
+#search-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#search-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
